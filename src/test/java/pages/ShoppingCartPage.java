@@ -17,11 +17,11 @@ public class ShoppingCartPage extends BasePage {
         super(driver);
     }
 
-    public void CheckoutButton() {
+    public void clickCheckoutButton() {
         driver.findElement(CHECKOUT_BUTTON).click();
     }
 
-    public void ContinueButton() {
+    public void clickContinueButton() {
         driver.findElement(CONTINUE_SHOPPING_BUTTON).click();
     }
 
@@ -38,7 +38,7 @@ public class ShoppingCartPage extends BasePage {
         return driver.findElement(By.xpath(String.format(ITEM_CONTAINER_CART, productNameCart)));
     }
 
-    public void removeButton(String productNameCart) {
+    public void clickRemoveButton(String productNameCart) {
         driver.findElement(REMOVE_BUTTON_CART).click();
     }
 

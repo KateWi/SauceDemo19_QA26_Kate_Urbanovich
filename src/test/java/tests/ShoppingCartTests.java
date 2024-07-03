@@ -21,9 +21,9 @@ public class ShoppingCartTests extends BaseTest {
         assertEquals(shoppingCartPage.getProductPriceFromCart("Sauce Labs Bike Light"), "$9.99");
         assertEquals(shoppingCartPage.getProductDescriptionFromCart("Sauce Labs Bolt T-Shirt"), "Get your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt.");
         assertEquals(shoppingCartPage.getProductPriceFromCart("Sauce Labs Bolt T-Shirt"), "$15.99");
-        shoppingCartPage.removeButton("Sauce Labs Bike Light");
+        shoppingCartPage.clickRemoveButton("Sauce Labs Bike Light");
         assertEquals(shoppingCartPage.getShoppingCartBadge(), "2");
-        shoppingCartPage.removeButton("Sauce Labs Backpack");
+        shoppingCartPage.clickRemoveButton("Sauce Labs Backpack");
         assertEquals(shoppingCartPage.getShoppingCartBadge(), "1");
     }
 }

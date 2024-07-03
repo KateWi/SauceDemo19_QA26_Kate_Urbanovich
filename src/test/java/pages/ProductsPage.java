@@ -14,6 +14,7 @@ public class ProductsPage extends BasePage {
     private final static By REMOVE_BUTTON = By.cssSelector("button[id^=remove]");
     private final static By CART_BUTTON = By.id("shopping_cart_container");
 
+
     public ProductsPage(WebDriver driver) {
         super(driver);
     }
