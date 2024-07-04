@@ -11,8 +11,8 @@ public class ShoppingCartTests extends BaseTest {
         productsPage.clickAddToCartButton("Sauce Labs Backpack");
         productsPage.clickAddToCartButton("Sauce Labs Bike Light");
         productsPage.clickAddToCartButton("Sauce Labs Bolt T-Shirt");
-        burgerMenuPage.clickBurgerMenu();
-        burgerMenuPage.clickLogout();
+        basePage.clickBurgerMenu();
+        basePage.clickLogout();
         loginPage.login("standard_user", "secret_sauce");
         productsPage.clickCartButton();
         assertEquals(shoppingCartPage.getProductDescriptionFromCart("Sauce Labs Backpack"), "carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.");

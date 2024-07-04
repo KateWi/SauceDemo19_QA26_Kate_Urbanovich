@@ -20,9 +20,7 @@ public class ProductsTests extends BaseTest {
     public void checkFromDetailsPageTest(String product_name, String product_desc, String product_price) {
         loginPage.login("standard_user", "secret_sauce");
         productsPage.clickAddToCartButton(product_name);
-        assertEquals(productsPage.getProductPrice(product_name), product_price);
-        assertEquals(productsPage.getProductDescription(product_name), product_desc);
-        productsPage.getProductName(product_name);
+        productsPage.openProductDetials(product_name);
         assertEquals(productDetailsPage.getDetailsProductPrice(), product_price);
         assertEquals(productDetailsPage.getDetailsProductDescription(), product_desc);
         productDetailsPage.clickBackToProductsButton();

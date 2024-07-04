@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="055d6a03-26b8-4d38-ada7-13d8ff19d483" name="Changes" comment="fixSauceDemoHomeWork4">
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/Retry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/TestListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ProductDetailsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ProductDetailsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ProductsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ProductsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/ProductsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ProductsTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,11 +44,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "SauceDemoLesson21",
-    "last_opened_file_path": "D:/TMS/projects/SauceDemo19_QA26_Kate_Urbanovich",
+    "last_opened_file_path": "D:/TMS/projects/Herokuapp_QA26_Kate_Urbanovich",
     "onboarding.tips.debug.path": "D:/TMS/projects/SauceDemo19_QA26_Kate_Urbanovich/src/main/java/org/example/Main.java"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.ProductsTests.addToCartProductTest">
+  <component name="RunManager" selected="TestNG.ProductsTests.checkFromDetailsPageTest">
     <configuration name="LoginTests.negativeLoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SauceDemo19_QA26_Kate_Urbanovich" />
       <extension name="coverage">
@@ -141,8 +139,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ProductsTests.addToCartProductTest" />
         <item itemvalue="TestNG.ProductsTests.checkFromDetailsPageTest" />
+        <item itemvalue="TestNG.ProductsTests.addToCartProductTest" />
         <item itemvalue="TestNG.LoginTests.negativeLoginTest" />
         <item itemvalue="TestNG.ProductsTests" />
         <item itemvalue="TestNG.ShoppingCartTests" />
@@ -205,6 +203,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/pages/ProductDetailsPage.java</url>
           <line>15</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/tests/ProductsTests.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/tests/ProductsTests.java</url>

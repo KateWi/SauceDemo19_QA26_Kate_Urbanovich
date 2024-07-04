@@ -22,5 +22,6 @@ public class ProductDetailsPage extends BasePage {
     public String getDetailsProductDescription() {
         return driver.findElement(ITEM_DETAILS_DESCRIPTION).getText();
     }
+
 }
 
