@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="055d6a03-26b8-4d38-ada7-13d8ff19d483" name="Changes" comment="commitSauceDemoTests">
+    <list default="true" id="055d6a03-26b8-4d38-ada7-13d8ff19d483" name="Changes" comment="fixSauceDemoHomeWork4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ProductDetailsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ProductDetailsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/ProductsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ProductsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ShoppingCartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ShoppingCartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/CheckoutTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/CheckoutTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/ProductsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ProductsTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ShoppingCartTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ShoppingCartTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="SauceDemo" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,34 +39,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;SauceDemo&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/TMS/projects/SauceDemo19_QA26_Kate_Urbanovich&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;D:/TMS/projects/SauceDemo19_QA26_Kate_Urbanovich/src/main/java/org/example/Main.java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "SauceDemoLesson21",
+    "last_opened_file_path": "D:/TMS/projects/Herokuapp_QA26_Kate_Urbanovich",
+    "onboarding.tips.debug.path": "D:/TMS/projects/SauceDemo19_QA26_Kate_Urbanovich/src/main/java/org/example/Main.java"
   }
-}</component>
-  <component name="RunManager" selected="TestNG.ProductsTests">
-    <configuration name="CheckoutTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SauceDemo19_QA26_Kate_Urbanovich" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.CheckoutTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTests" type="TestNG" temporary="true" nameIsGenerated="true">
+}]]></component>
+  <component name="RunManager" selected="TestNG.ProductsTests.checkFromDetailsPageTest">
+    <configuration name="LoginTests.negativeLoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SauceDemo19_QA26_Kate_Urbanovich" />
       <extension name="coverage">
         <pattern>
@@ -78,7 +59,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.LoginTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="METHOD_NAME" value="negativeLoginTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -96,6 +78,24 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.ProductsTests" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductsTests.addToCartProductTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SauceDemo19_QA26_Kate_Urbanovich" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ProductsTests" />
+      <option name="METHOD_NAME" value="addToCartProductTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -139,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ProductsTests" />
         <item itemvalue="TestNG.ProductsTests.checkFromDetailsPageTest" />
+        <item itemvalue="TestNG.ProductsTests.addToCartProductTest" />
+        <item itemvalue="TestNG.LoginTests.negativeLoginTest" />
+        <item itemvalue="TestNG.ProductsTests" />
         <item itemvalue="TestNG.ShoppingCartTests" />
-        <item itemvalue="TestNG.LoginTests" />
-        <item itemvalue="TestNG.CheckoutTests" />
       </list>
     </recent_temporary>
   </component>
@@ -164,7 +164,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719493460695</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fixSauceDemoHomeWork4">
+      <option name="closed" value="true" />
+      <created>1720016022889</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1720016022889</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -180,7 +188,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commitSauceDemoTests" />
-    <option name="LAST_COMMIT_MESSAGE" value="commitSauceDemoTests" />
+    <MESSAGE value="fixSauceDemoHomeWork4" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixSauceDemoHomeWork4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -195,9 +204,14 @@
           <line>15</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/tests/ProductsTests.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/tests/ProductsTests.java</url>
-          <line>22</line>
+          <line>19</line>
           <properties class="tests.ProductsTests" method="checkFromDetailsPageTest">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />

@@ -4,16 +4,18 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import pages.*;
 
 import java.time.Duration;
 
+@Listeners({TestListener.class})
 public abstract class BaseTest {
     protected WebDriver driver;
     protected LoginPage loginPage;
     protected ProductsPage productsPage;
     protected ProductDetailsPage productDetailsPage;
-    protected BurgerMenuPage burgerMenuPage;
+    protected BasePage basePage;
     protected ShoppingCartPage shoppingCartPage;
     protected CheckoutYourInfoPage checkoutYourInfoPage;
     protected CheckoutOverviewPage checkoutOverviewPage;
@@ -28,7 +30,6 @@ public abstract class BaseTest {
         this.loginPage = new LoginPage(driver);
         this.productsPage = new ProductsPage(driver);
         this.productDetailsPage = new ProductDetailsPage(driver);
-        this.burgerMenuPage = new BurgerMenuPage(driver);
         this.shoppingCartPage = new ShoppingCartPage(driver);
         this.checkoutYourInfoPage = new CheckoutYourInfoPage(driver);
         this.checkoutOverviewPage = new CheckoutOverviewPage(driver);
