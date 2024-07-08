@@ -3,18 +3,18 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public abstract class BasePage {
-    protected static WebDriver driver;
+public class BasePage {
+    protected WebDriver driver;
     private static final By MENU = By.id("react-burger-menu-btn");
     private static final By LOGOUT = By.id("logout_sidebar_link");
 
     public BasePage(WebDriver driver) {
-        BasePage.driver = driver;
+        this.driver = driver;
 
     }
 
     public void clickBurgerMenu() {
-        driver.findElement(MENU).click();
+       driver.findElement(MENU).click();
     }
 
     public void clickLogout() {

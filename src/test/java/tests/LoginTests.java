@@ -8,13 +8,13 @@ import static org.testng.Assert.assertEquals;
 
 
 public class LoginTests extends BaseTest {
-    @Test(retryAnalyzer = Retry.class)
+    @Test(groups = {"Smoke"})
     public void positiveLoginTest() {
         loginPage.login("standard_user", "secret_sauce");
         Assert.assertTrue(productsPage.isShoppingCartDisplayed());
     }
 
-    @Test(dataProvider = "negativeLoginTestData")
+    @Test(dataProvider = "negativeLoginTestData", groups = {"Regression"})
     public void negativeLoginTest(String email, String password, String expectedErrorMessage) {
         loginPage.login(email, password);
         assertEquals(loginPage.getErrorMessageText(), expectedErrorMessage);

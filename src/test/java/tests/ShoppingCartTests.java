@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
 
 public class ShoppingCartTests extends BaseTest {
-    @Test
+    @Test(groups = {"Smoke", "Regression"})
     public void addRemoveToCartProductTest() {
         loginPage.login("standard_user", "secret_sauce");
         productsPage.clickAddToCartButton("Sauce Labs Backpack");

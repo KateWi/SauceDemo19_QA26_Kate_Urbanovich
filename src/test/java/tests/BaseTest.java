@@ -1,11 +1,9 @@
 package tests;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
+import org.testng.annotations.*;
 import pages.*;
+import utils.DriveFactory;
 
 import java.time.Duration;
 
@@ -23,10 +21,12 @@ public abstract class BaseTest {
 
 
     @BeforeMethod(alwaysRun = true)
-    public void setUp() {
-        this.driver = new ChromeDriver();
+    @Parameters("browserName")
+    public void setUp(@Optional("chrome") String browser) throws Exception {
+        driver = DriveFactory.getDriver(browser);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        driver.get("https://www.saucedemo.com/");
         this.loginPage = new LoginPage(driver);
         this.productsPage = new ProductsPage(driver);
         this.productDetailsPage = new ProductDetailsPage(driver);
@@ -34,8 +34,8 @@ public abstract class BaseTest {
         this.checkoutYourInfoPage = new CheckoutYourInfoPage(driver);
         this.checkoutOverviewPage = new CheckoutOverviewPage(driver);
         this.checkoutCompletePage = new CheckoutCompletePage(driver);
+        this.basePage = new BasePage(driver);
 
-        loginPage.open();
     }
 
     @AfterMethod(alwaysRun = true)
