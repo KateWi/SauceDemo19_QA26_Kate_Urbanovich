@@ -5,18 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="055d6a03-26b8-4d38-ada7-13d8ff19d483" name="Changes" comment="fixSauceDemolesson21">
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/DriveFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/suites/regression.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/suites/smoke.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/utils/AllureUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/utils/InvokedListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/allure.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/CheckoutCompletePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/CheckoutCompletePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/CheckoutOverviewPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/CheckoutOverviewPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/CheckoutYourInfoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/CheckoutYourInfoPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ProductDetailsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ProductDetailsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ProductsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ProductsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ShoppingCartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ShoppingCartPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/CheckoutTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/CheckoutTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ProductsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ProductsTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ShoppingCartTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ShoppingCartTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestListener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +37,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="maven22Lesson" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -47,24 +51,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;maven22Lesson&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/TMS/projects/Herokuapp_QA26_Kate_Urbanovich&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;D:/TMS/projects/SauceDemo19_QA26_Kate_Urbanovich/src/main/java/org/example/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "allure22Lesson",
+    "last_opened_file_path": "D:/TMS/projects/Herokuapp_QA26_Kate_Urbanovich",
+    "onboarding.tips.debug.path": "D:/TMS/projects/SauceDemo19_QA26_Kate_Urbanovich/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\TMS\projects\SauceDemo19_QA26_Kate_Urbanovich\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.D:/TMS/projects/SauceDemo19_QA26_Kate_Urbanovich/src/test/resources/suites/regression.xml">
+  <component name="RunManager" selected="TestNG.LoginTests.positiveLoginTest">
     <configuration name="CheckoutTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SauceDemo19_QA26_Kate_Urbanovich" />
       <extension name="coverage">
@@ -102,6 +106,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoginTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SauceDemo19_QA26_Kate_Urbanovich" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LoginTests.positiveLoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SauceDemo19_QA26_Kate_Urbanovich" />
       <extension name="coverage">
@@ -120,31 +141,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShoppingCartTests.addRemoveToCartProductTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SauceDemo19_QA26_Kate_Urbanovich" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ShoppingCartTests" />
-      <option name="METHOD_NAME" value="addRemoveToCartProductTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginTests.positiveLoginTest" />
+        <item itemvalue="TestNG.LoginTests" />
+        <item itemvalue="TestNG.CheckoutTests" />
         <item itemvalue="TestNG.D:/TMS/projects/SauceDemo19_QA26_Kate_Urbanovich/src/test/resources/suites/regression.xml" />
         <item itemvalue="TestNG.D:/TMS/projects/SauceDemo19_QA26_Kate_Urbanovich/src/test/resources/suites/suite.xml" />
-        <item itemvalue="TestNG.ShoppingCartTests.addRemoveToCartProductTest" />
-        <item itemvalue="TestNG.LoginTests.positiveLoginTest" />
-        <item itemvalue="TestNG.CheckoutTests" />
       </list>
     </recent_temporary>
   </component>
@@ -202,12 +205,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/tests/CheckoutTests.java</url>
-          <line>11</line>
+          <line>13</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/tests/CheckoutTests.java</url>
-          <line>10</line>
+          <line>12</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -232,7 +235,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/pages/ProductsPage.java</url>
-          <line>30</line>
+          <line>33</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>

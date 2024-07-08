@@ -1,12 +1,14 @@
 package tests;
 
+import io.qameta.allure.Description;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
 public class CheckoutTests extends BaseTest {
-    @Test(groups = {"Smoke"})
+    @Test(groups = {"Smoke"}, description = "Positive checkout test")
+    @Description("full customer path with product order")
     public void checkInfoPositiveTest() {
         loginPage.login("standard_user", "secret_sauce");
         productsPage.clickAddToCartButton("Sauce Labs Backpack");
