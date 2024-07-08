@@ -1,10 +1,10 @@
 package pages;
 
-import io.qameta.allure.Attachment;
+
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import utils.AllureUtils;
+
 
 public class LoginPage extends BasePage {
     private static final By EMAIL_INPUT = By.id("user-name");

@@ -10,7 +10,7 @@ public class CheckoutYourInfoPage extends BasePage {
     private static final By ZIP_CODE_INPUT = By.id("postal-code");
     private static final By CONTINUE_BUTTON = By.id("continue");
     private static final By CANCEL_BUTTON = By.id("cancel");
-    private static final By CHECKOUT_OVERVIEW = By.className("title");;
+    private static final By CHECKOUT_OVERVIEW = By.className("title");
 
     public CheckoutYourInfoPage(WebDriver driver) {
         super(driver);
