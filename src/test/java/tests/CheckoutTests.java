@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
 
 public class CheckoutTests extends BaseTest {
-    @Test
+    @Test(groups = {"Smoke"})
     public void checkInfoPositiveTest() {
         loginPage.login("standard_user", "secret_sauce");
         productsPage.clickAddToCartButton("Sauce Labs Backpack");

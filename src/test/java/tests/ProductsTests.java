@@ -7,7 +7,7 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 public class ProductsTests extends BaseTest {
-    @Test(retryAnalyzer = Retry.class, dataProvider = "itemTestData")
+    @Test(retryAnalyzer = Retry.class, dataProvider = "itemTestData", groups = {"Smoke"})
     public void addToCartProductTest(String product_name, String product_desc, String product_price) {
         loginPage.login("standard_user", "secret_sauce");
         assertEquals(productsPage.getProductPrice(product_name), product_price);
@@ -16,7 +16,7 @@ public class ProductsTests extends BaseTest {
         assertEquals(productsPage.getProductPrice(product_name), product_price);
     }
 
-    @Test(dataProvider = "itemTestData")
+    @Test(dataProvider = "itemTestData", groups = {"Regression"})
     public void checkFromDetailsPageTest(String product_name, String product_desc, String product_price) {
         loginPage.login("standard_user", "secret_sauce");
         productsPage.clickAddToCartButton(product_name);
