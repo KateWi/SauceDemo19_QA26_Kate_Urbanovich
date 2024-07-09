@@ -1,13 +1,15 @@
 package tests;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.ITestContext;
 import org.testng.annotations.*;
 import pages.*;
 import utils.DriveFactory;
+import utils.InvokedListener;
 
 import java.time.Duration;
 
-@Listeners({TestListener.class})
+@Listeners({InvokedListener.class, TestListener.class})
 public abstract class BaseTest {
     protected WebDriver driver;
     protected LoginPage loginPage;
@@ -22,8 +24,9 @@ public abstract class BaseTest {
 
     @BeforeMethod(alwaysRun = true)
     @Parameters("browserName")
-    public void setUp(@Optional("chrome") String browser) throws Exception {
+    public void setUp(@Optional("chrome") String browser, ITestContext testContext) throws Exception {
         driver = DriveFactory.getDriver(browser);
+        testContext.setAttribute("driver", driver);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.get("https://www.saucedemo.com/");

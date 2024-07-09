@@ -1,5 +1,6 @@
 package pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,10 +18,12 @@ public class ShoppingCartPage extends BasePage {
         super(driver);
     }
 
+    @Step("click 'Checkout' button")
     public void clickCheckoutButton() {
         driver.findElement(CHECKOUT_BUTTON).click();
     }
 
+    @Step("click 'Continue' button")
     public void clickContinueButton() {
         driver.findElement(CONTINUE_SHOPPING_BUTTON).click();
     }
@@ -38,9 +41,11 @@ public class ShoppingCartPage extends BasePage {
         return driver.findElement(By.xpath(String.format(ITEM_CONTAINER_CART, productNameCart)));
     }
 
+    @Step("click remove button")
     public void clickRemoveButton(String productNameCart) {
         driver.findElement(REMOVE_BUTTON_CART).click();
     }
+
 
     public String getShoppingCartBadge() {
         return driver.findElement(SHOPPING_CART_BADGE).getText();
